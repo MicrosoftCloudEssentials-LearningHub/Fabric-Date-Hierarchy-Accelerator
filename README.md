@@ -10,8 +10,11 @@ Last updated: 2025-05-20
 
 ----------
 
+> Automating date hierarchies in Power BI and Microsoft Fabric eliminates repetitive manual work, ensures consistency, and accelerates report development. Leveraging Direct Lake improves report performance and enables real-time analytics. This toolkit provides scripts, templates, and configuration files to standardize and automate hierarchy creation, making it easier for teams to deliver high-quality, performant analytics solutions.
+
 > [!IMPORTANT]
 > Please note that `these demos are intended as a guide and are based on my personal experiences. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
+
 
 
 
