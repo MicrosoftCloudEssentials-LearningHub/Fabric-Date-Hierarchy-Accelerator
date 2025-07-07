@@ -37,6 +37,9 @@ Last updated: 2025-05-20
 
         https://github.com/user-attachments/assets/52536caf-36c2-4b1e-a42b-e64e3d6b403a
 
+## Automation Walkthrough
+
+
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
