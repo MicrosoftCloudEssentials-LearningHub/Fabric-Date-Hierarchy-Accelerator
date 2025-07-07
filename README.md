@@ -15,10 +15,27 @@ Last updated: 2025-05-20
 > [!IMPORTANT]
 > Please note that `these demos are intended as a guide and are based on my personal experiences. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
+## Prerequisites
 
+- [Power BI Desktop](https://powerbi.microsoft.com/)
+- [Node.js](https://nodejs.org/) (for running review scripts)
+- [Git](https://git-scm.com/) (for cloning the repository)
+- Install Chocolatey (One-Time Setup)
+  1. **Open PowerShell as Administrator**
+  2. Run this command:
 
+     ```powershell
+     Set-ExecutionPolicy Bypass -Scope Process -Force; `
+     [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
+     iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+     ```
 
+  3. After installation, restart your terminal and run:
+     ```powershell
+     choco install make
+     ```
 
+    https://github.com/user-attachments/assets/52536caf-36c2-4b1e-a42b-e64e3d6b403a
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
