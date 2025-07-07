@@ -35,7 +35,7 @@ Last updated: 2025-05-20
      choco install make
      ```
 
-    https://github.com/user-attachments/assets/52536caf-36c2-4b1e-a42b-e64e3d6b403a
+        https://github.com/user-attachments/assets/52536caf-36c2-4b1e-a42b-e64e3d6b403a
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
