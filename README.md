@@ -101,7 +101,12 @@ Option 1:
 6. Rename the query as desired, e.g something like DateTableQuery (use `right-click`).
 
     https://github.com/user-attachments/assets/111512e1-0c6c-493b-a9ad-205788a72146
-    
+
+> [!NOTE]
+> Ensure that you have a warehouse or lakehouse available to store the data. If you have the necessary permissions, you can create one. Below is an example of how to create a lakehouse.
+
+  https://github.com/user-attachments/assets/527c071a-2561-40b9-941e-3ca90ee8b9bd
+  
 7. Load it into, this makes the date table available for modeling and DAX calculations.
     - A Lakehouse (if using Data Engineering),
     - A Warehouse, or
