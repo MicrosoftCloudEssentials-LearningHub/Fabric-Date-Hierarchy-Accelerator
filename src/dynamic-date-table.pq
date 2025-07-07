@@ -44,7 +44,7 @@ let
         else Date.Year([Date])
     ),
 
-    // Add fiscal quarter using Number.Mod instead of mod operator
+    // Add fiscal quarter using Number.Mod
     AddFiscalQuarter = Table.AddColumn(AddFiscalYear, "FiscalQuarter", each 
         Number.RoundUp((Number.Mod(Date.Month([Date]) - FiscalYearStartMonth + 12, 12) + 1) / 3)
     ),
@@ -64,7 +64,23 @@ let
     AddIsWeekend = Table.AddColumn(AddDayOfWeek, "IsWeekend", each 
         let d = Date.DayOfWeek([Date], Day.Monday) 
         in d = 5 or d = 6
-    )
+    ),
+
+    // Explicitly set data types for all columns
+    SetDataTypes = Table.TransformColumnTypes(AddIsWeekend, {
+        {"Date", type date},
+        {"Year", Int64.Type},
+        {"Month", Int64.Type},
+        {"Day", Int64.Type},
+        {"Quarter", Int64.Type},
+        {"ISOWeek", Int64.Type},
+        {"FiscalYear", Int64.Type},
+        {"FiscalQuarter", Int64.Type},
+        {"FiscalMonth", Int64.Type},
+        {"IsHoliday", type logical},
+        {"DayOfWeek", type text},
+        {"IsWeekend", type logical}
+    })
 
 in
-    AddIsWeekend
+    SetDataTypes
