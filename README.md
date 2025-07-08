@@ -101,6 +101,10 @@ https://github.com/user-attachments/assets/5cf3883c-3785-473d-b9e9-c7378d1587a5
 
     https://github.com/user-attachments/assets/f9c9fee2-d9fc-492c-97f2-18f46a8b811e
 
+    | Before | After | 
+    | ---- | ---- | 
+    | <img width="550" alt="image" src="https://github.com/user-attachments/assets/3c4c870e-8257-4d52-975c-7eb4d232bea6"> | <img width="550" alt="image" src="https://github.com/user-attachments/assets/d1ee0e91-87c1-47b9-921e-f2aedf719c7d"> | 
+
 4. Schedule the notebook in a Data Pipeline for automation.
 5. Connect your Power BI dataset or other Fabric workloads to the Lakehouse table.
 
