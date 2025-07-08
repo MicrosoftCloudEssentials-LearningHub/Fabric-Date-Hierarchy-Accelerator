@@ -27,8 +27,11 @@ Last updated: 2025-05-20
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
+- [Prerequisites](#prerequisites)
+- [Automation Walkthrough](#automation-walkthrough)
+    - [Generate a Dynamic Date Table (Option 1)](#generate-a-dynamic-date-table-option-1)
+    
 </details>
-
 
 ## Prerequisites
 
@@ -58,14 +61,9 @@ Last updated: 2025-05-20
 
 1. Prepare Your Workspace: Install [prerequisites](#prerequisites), and clone this repository.
 2. Ensure you have access to your [Microsoft Fabric workspace](https://app.fabric.microsoft.com/).
+3. Option 1: We can create a flexible, [reusable date table](#generate-a-dynamic-date-table-option-1) in your Microsoft Fabric workspace that supports time intelligence in Power BI reports (like YTD, MTD, fiscal periods, etc.).
 
-
-
-Option 1:
-3. Generate a Dynamic Date Table: we can create a flexible, reusable date table in your Microsoft Fabric workspace that supports time intelligence in Power BI reports (like YTD, MTD, fiscal periods, etc.).
-
-
-### Generate a Dynamic Date Table
+### Generate a Dynamic Date Table (Option 1)
 
 > [!NOTE]
 > The script is parameterized, meaning you can customize. You’ll usually see these as variables at the top of the script. Modify them as needed for your organization. <br/>
@@ -74,6 +72,7 @@ Option 1:
 > - Fiscal Year Start Month (e.g., 7 for July) <br/>
 > - Holiday Table (optional: pass a list of dates to mark holidays)
 
+https://github.com/user-attachments/assets/6100e991-eefa-4fcc-b397-42364a70d83a
 
 1. Go to your workspace, or create a new workspace if needed.
 
@@ -113,7 +112,6 @@ Option 1:
     - A Power BI dataset (if using Power BI experience).
 
         <img width="700" alt="image" src="https://github.com/user-attachments/assets/a783661f-3cc1-4582-b211-27b14f1f3a96">
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
