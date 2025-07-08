@@ -65,10 +65,10 @@ Last updated: 2025-05-20
 
 1. Prepare Your Workspace: Install [prerequisites](#prerequisites), and clone this repository.
 2. Ensure you have access to your [Microsoft Fabric workspace](https://app.fabric.microsoft.com/).
-3. Option 1: We can create a flexible, [reusable date table](#generate-a-dynamic-date-table-option-1) in your Microsoft Fabric workspace that supports time intelligence in Power BI reports (like YTD, MTD, fiscal periods, etc.).
-4. Option 2: Write a notebook that generates the date table and writes it to a Lakehouse table.
-5. Option 3: Create a Power BI model that connects to the Lakehouse date table and includes prebuilt hierarchies and measures, you can standardize the use of the date table across reports.
-   
+3. Option 1: A parameterized Power Query script that generates a [reusable date table](#generate-a-dynamic-date-table-option-1). It supports fiscal logic, holidays, and time intelligence (YTD, MTD, etc.), and stores the result in a Lakehouse for Direct Lake consumption.
+4. Option 2: For those who prefer a code-first approach, this option uses Fabric notebooks to generate the date table and write it to a Lakehouse. It’s ideal for advanced logic and pipeline integration.
+5. Option 3: A semantic model template that includes preconfigured hierarchies and measures. This is useful for teams looking to standardize reporting and accelerate development.
+
 ### Generate a Dynamic Date Table (Option 1)
 
 >  Dataflow Gen2 to generate a parameterized, reusable date table, storing the output in a Lakehouse, and consuming it via Direct Lake in Power BI.
