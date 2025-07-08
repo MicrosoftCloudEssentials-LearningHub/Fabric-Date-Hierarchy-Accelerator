@@ -21,6 +21,7 @@ Last updated: 2025-05-20
 <summary><b>List of References </b> (Click to expand)</summary>
 
 - [Leveraging pure Direct Lake mode for maximum query performance](https://powerbi.microsoft.com/en-us/blog/leveraging-pure-direct-lake-mode-for-maximum-query-performance/)
+- [Dataflow Gen2 data destinations and managed settings](https://learn.microsoft.com/en-us/fabric/data-factory/dataflow-gen2-data-destinations-and-managed-settings)
 
 </details>
 
