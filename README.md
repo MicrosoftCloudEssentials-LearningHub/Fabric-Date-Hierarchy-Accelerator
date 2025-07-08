@@ -140,6 +140,22 @@ https://github.com/user-attachments/assets/6100e991-eefa-4fcc-b397-42364a70d83a
 
 `.PBIT`
 
+1. Create the Date Table in Fabric Lakehouse: Use a Fabric Notebook (PySpark or T-SQL, as above) to generate and save the date table in your Lakehouse.
+2. Create a Power BI Report Connected to the Lakehouse:
+    - Connect to your Fabric Lakehouse (use Direct Lake or DirectQuery mode).
+    - Import the date table from the Lakehouse.
+    - Load the table into your model.
+3. Add Prebuilt Hierarchies and Measures
+    - In the Power BI model, create date hierarchies (e.g., Year > Quarter > Month > Day, Fiscal, ISO Week).
+    - Add DAX measures for YTD, MTD, QTD, Prior Year, Holidays, etc. (reuse from your advanced-dax-measures.txt).
+4. Save as a Power BI Template (.PBIT)
+    - Go to File > Export > Power BI template (.pbit).
+    - This template will include the model structure, hierarchies, and measures, but not the data.
+5. Version Control and CI/CD
+    - Store the .pbit file in your GitHub or Azure DevOps repository.
+    - Use deployment pipelines in Fabric or Power BI Service to automate deployment of the template to workspaces.
+6. Report Creation: Users can create new reports by opening the .pbit template, ensuring all reports use the standardized date table, hierarchies, and measures.
+
 ## Best Practices
 
 - Version Control: If you are using a notebook, connect your Fabric workspace to GitHub or Azure DevOps to enable version control for the notebook.
