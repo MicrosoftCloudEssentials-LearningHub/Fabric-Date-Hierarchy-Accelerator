@@ -138,7 +138,19 @@ https://github.com/user-attachments/assets/6100e991-eefa-4fcc-b397-42364a70d83a
 > Ensure that you have a warehouse or lakehouse available to store the data. If you have the necessary permissions, you can create one. Below is an example of how to create a lakehouse.
 
    https://github.com/user-attachments/assets/527c071a-2561-40b9-941e-3ca90ee8b9bd
-  
+
+> [!IMPORTANT]
+> Currently, you cannot attach a Lakehouse to a Fabric notebook via code, it must be done manually through the Fabric UI. Microsoft Fabric requires a Lakehouse
+> to be explicitly attached to the notebook session so that Spark knows where to read/write tables. This attachment is handled through the notebook interface,
+> not through PySpark code or a Spark config. <br/>
+> - Open your notebook in Fabric. <br/>
+> - In the left-panel, click `Add data item`, and choose from the dropdown. <br/>
+> - Select the Lakehouse you want to use (e.g., the one with your workspace ID). 
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/84172e09-3f10-44f9-a373-90ce2fa43f1d">
+
+https://github.com/user-attachments/assets/5cf3883c-3785-473d-b9e9-c7378d1587a5
+
 3. Run all cells to generate and save the date table.
 
     https://github.com/user-attachments/assets/f9c9fee2-d9fc-492c-97f2-18f46a8b811e
