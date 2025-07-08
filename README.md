@@ -16,13 +16,13 @@ Last updated: 2025-05-20
 > [!IMPORTANT]
 > Please note that `these demos are intended as a guide and are based on my personal experiences. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
-
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
 - [Leveraging pure Direct Lake mode for maximum query performance](https://powerbi.microsoft.com/en-us/blog/leveraging-pure-direct-lake-mode-for-maximum-query-performance/)
 - [Dataflow Gen2 data destinations and managed settings](https://learn.microsoft.com/en-us/fabric/data-factory/dataflow-gen2-data-destinations-and-managed-settings)
-
+- [Notebook source control and deployment](https://learn.microsoft.com/en-us/fabric/data-engineering/notebook-source-control-deployment)
+  
 </details>
 
 <details>
@@ -86,7 +86,6 @@ https://github.com/user-attachments/assets/6100e991-eefa-4fcc-b397-42364a70d83a
 
     <img width="700" alt="image" src="https://github.com/user-attachments/assets/9bd461f2-b79a-4f50-af41-1a68adf57fa3">
 
-
 2. Create a Dataflow Gen2: click `New` → `Dataflow Gen2`.
 
     <img width="700" alt="image" src="https://github.com/user-attachments/assets/9b6affbd-e25e-4326-805c-8666345de379"> 
@@ -120,13 +119,30 @@ https://github.com/user-attachments/assets/6100e991-eefa-4fcc-b397-42364a70d83a
     - A Power BI dataset (if using Power BI experience).
 
         <img width="700" alt="image" src="https://github.com/user-attachments/assets/a783661f-3cc1-4582-b211-27b14f1f3a96">
+
 ### Fabric Notebooks (Option 2)
 
 `PySpark`
 
 1. Create a new notebook in your Fabric workspace (choose PySpark kernel).
+
+    <img width="700" alt="image" src="https://github.com/user-attachments/assets/6d8393c7-b6c3-4ca9-80a0-56f3c7cbae0c">
+
+    <img width="700" alt="image" src="https://github.com/user-attachments/assets/58aa7d27-05ea-4efc-966b-09453f8cd26d">
+
 2. Paste the content of the cells as shown in this notebook, or upload the notebook.
+
+    https://github.com/user-attachments/assets/09336541-224d-49da-b050-2beba2f225a9
+
+> [!NOTE]
+> Ensure that you have a warehouse or lakehouse available to store the data. If you have the necessary permissions, you can create one. Below is an example of how to create a lakehouse.
+
+   https://github.com/user-attachments/assets/527c071a-2561-40b9-941e-3ca90ee8b9bd
+  
 3. Run all cells to generate and save the date table.
+
+    https://github.com/user-attachments/assets/f9c9fee2-d9fc-492c-97f2-18f46a8b811e
+
 4. Schedule the notebook in a Data Pipeline for automation.
 5. Connect your Power BI dataset or other Fabric workloads to the Lakehouse table.
 
