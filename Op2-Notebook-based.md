@@ -53,7 +53,7 @@ https://github.com/user-attachments/assets/5cf3883c-3785-473d-b9e9-c7378d1587a5
 ## T-SQL approach 
 
 1. Create a new notebook in Fabric (choose T-SQL kernel) or use a T-SQL script activity in a pipeline.
-2. Paste, or[upload the notebook](./src/notebook-date-hierarchy-tsql.ipynb) and run the script
+2. Paste, or [upload the notebook](./src/notebook-date-hierarchy-tsql.ipynb) and run the script
 3. The table dbo.DateTable will be created in your Lakehouse or Warehouse.
 4. Connect Power BI or other Fabric workloads to this table.
 
