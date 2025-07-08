@@ -76,7 +76,7 @@ Last updated: 2025-05-20
 
     <img width="700" alt="image" src="https://github.com/user-attachments/assets/58aa7d27-05ea-4efc-966b-09453f8cd26d">
 
-2. Paste the content of the cells as shown in this notebook, or upload the notebook.
+2. Paste the content of the cells as shown in this notebook, or [upload the notebook](./src/notebook-date-hierarchy.ipynb)
 
     https://github.com/user-attachments/assets/09336541-224d-49da-b050-2beba2f225a9
 
