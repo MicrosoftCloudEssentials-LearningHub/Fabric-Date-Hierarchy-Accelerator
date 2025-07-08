@@ -62,8 +62,11 @@ Last updated: 2025-05-20
 1. Prepare Your Workspace: Install [prerequisites](#prerequisites), and clone this repository.
 2. Ensure you have access to your [Microsoft Fabric workspace](https://app.fabric.microsoft.com/).
 3. Option 1: We can create a flexible, [reusable date table](#generate-a-dynamic-date-table-option-1) in your Microsoft Fabric workspace that supports time intelligence in Power BI reports (like YTD, MTD, fiscal periods, etc.).
-
+4. Option 2: Write a notebook that generates the date table and writes it to a Lakehouse table.
+   
 ### Generate a Dynamic Date Table (Option 1)
+
+>  Dataflow Gen2 to generate a parameterized, reusable date table, storing the output in a Lakehouse, and consuming it via Direct Lake in Power BI.
 
 > [!NOTE]
 > The script is parameterized, meaning you can customize. You’ll usually see these as variables at the top of the script. Modify them as needed for your organization. <br/>
@@ -112,6 +115,30 @@ https://github.com/user-attachments/assets/6100e991-eefa-4fcc-b397-42364a70d83a
     - A Power BI dataset (if using Power BI experience).
 
         <img width="700" alt="image" src="https://github.com/user-attachments/assets/a783661f-3cc1-4582-b211-27b14f1f3a96">
+### Fabric Notebooks (Option 2)
+
+`PySpark`
+
+1. Create a new notebook in your Fabric workspace (choose PySpark kernel).
+2. Paste the content of the cells as shown in this notebook, or upload the notebook.
+3. Run all cells to generate and save the date table.
+4. Schedule the notebook in a Data Pipeline for automation.
+5. Connect your Power BI dataset or other Fabric workloads to the Lakehouse table.
+
+`or T-SQL`
+
+1. Create a new notebook in Fabric (choose T-SQL kernel) or use a T-SQL script activity in a pipeline.
+2. Paste and run the script.
+3. The table dbo.DateTable will be created in your Lakehouse or Warehouse.
+4. Connect Power BI or other Fabric workloads to this table.
+
+## Best Practices
+
+- Version Control: If you are using a notebook, connect your Fabric workspace to GitHub or Azure DevOps to enable version control for the notebook.
+- Schedule/Automate: Use Fabric Data Pipelines to schedule the notebook execution (e.g., daily, weekly).
+- Consume in Power BI or Other Fabric Workloads: Use the generated Lakehouse table as a source in Power BI datasets, Data Warehouses, or other Fabric experiences.
+- CI/CD Integration: Use Fabric’s Git integration for code review, pull requests, and automated deployment.
+
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
