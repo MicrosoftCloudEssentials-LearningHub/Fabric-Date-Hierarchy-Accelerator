@@ -29,8 +29,11 @@ Last updated: 2025-05-20
 
 - [Prerequisites](#prerequisites)
 - [Automation Walkthrough](#automation-walkthrough)
-    - [Generate a Dynamic Date Table (Option 1)](#generate-a-dynamic-date-table-option-1)
-    
+    - [Generate a Dynamic Date Table](#generate-a-dynamic-date-table-option-1) - (Option 1)
+    - [Fabric Notebooks](#fabric-notebooks-option-2) -  (Option 2)
+    - [Power BI Semantic Model Template](#power-bi-semantic-model-template-option-3) - (Option 3)
+- [Best Practices](#best-practices) 
+
 </details>
 
 ## Prerequisites
@@ -63,6 +66,7 @@ Last updated: 2025-05-20
 2. Ensure you have access to your [Microsoft Fabric workspace](https://app.fabric.microsoft.com/).
 3. Option 1: We can create a flexible, [reusable date table](#generate-a-dynamic-date-table-option-1) in your Microsoft Fabric workspace that supports time intelligence in Power BI reports (like YTD, MTD, fiscal periods, etc.).
 4. Option 2: Write a notebook that generates the date table and writes it to a Lakehouse table.
+5. Option 3: Create a Power BI model that connects to the Lakehouse date table and includes prebuilt hierarchies and measures, you can standardize the use of the date table across reports.
    
 ### Generate a Dynamic Date Table (Option 1)
 
@@ -131,6 +135,10 @@ https://github.com/user-attachments/assets/6100e991-eefa-4fcc-b397-42364a70d83a
 2. Paste and run the script.
 3. The table dbo.DateTable will be created in your Lakehouse or Warehouse.
 4. Connect Power BI or other Fabric workloads to this table.
+
+### Power BI Semantic Model Template (Option 3) 
+
+`.PBIT`
 
 ## Best Practices
 
