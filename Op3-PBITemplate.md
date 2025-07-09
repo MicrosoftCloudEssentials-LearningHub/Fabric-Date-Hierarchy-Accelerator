@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/59256b48-5aaa-417b-a1d4-26d897b8809d
 # Power BI Semantic Model Template (Option 3) 
 
 Costa Rica
@@ -29,12 +31,17 @@ https://github.com/user-attachments/assets/b85baa6d-6e15-459a-9b99-31cbf0d6c218
 
         <img width="700" alt="image" src="https://github.com/user-attachments/assets/55d71480-a334-43a1-8405-333009862ec8">
 
+        https://github.com/user-attachments/assets/918bc6dc-6a63-4ad3-9bf8-0b8994b41a81
+
 3. Add Prebuilt Hierarchies and Measures
     - In the Power BI model, create date hierarchies (e.g., Year > Quarter > Month > Day, Fiscal, ISO Week).
     - Add DAX measures for YTD, MTD, QTD, Prior Year, Holidays, etc. (reuse from your advanced-dax-measures.txt).
 4. Save as a Power BI Template (.PBIT)
     - Go to File > Export > Power BI template (.pbit).
     - This template will include the model structure, hierarchies, and measures, but not the data.
+
+        https://github.com/user-attachments/assets/452e86e8-6ebb-4c07-aad8-c9597d1c0a65
+
 5. Version Control and CI/CD
     - Store the .pbit file in your GitHub or Azure DevOps repository.
     - Use deployment pipelines in Fabric or Power BI Service to automate deployment of the template to workspaces.
