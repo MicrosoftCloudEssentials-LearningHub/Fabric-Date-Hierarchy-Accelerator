@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/59256b48-5aaa-417b-a1d4-26d897b8809d
 # Power BI Semantic Model Template (Option 3) 
 
 Costa Rica
