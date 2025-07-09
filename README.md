@@ -71,11 +71,18 @@ Last updated: 2025-05-20
 
 `.PBIT`
 
-1. Create the Date Table in Fabric Lakehouse: Use a Fabric Notebook (PySpark or T-SQL, as above) to generate and save the date table in your Lakehouse.
+1. Create the Date Table in Fabric Lakehouse/Warehouse: Leverage [Dataflow Gen2 with Power Query](./Op1-DataflowGen2.md) or use a [Fabric Notebook (PySpark or T-SQL)](./Op2-Notebook-based.md) to generate and save the date table in your Lakehouse.
 2. Create a Power BI Report Connected to the Lakehouse:
     - Connect to your Fabric Lakehouse (use Direct Lake or DirectQuery mode).
     - Import the date table from the Lakehouse.
     - Load the table into your model.
+
+        <img width="700" alt="image" src="https://github.com/user-attachments/assets/7f232b39-ce2b-49bf-a62c-a1b76c777de7">
+
+        <img width="700" alt="image" src="https://github.com/user-attachments/assets/f0f9d806-f322-4418-a96c-752891c44ee8">
+
+        <img width="700" alt="image" src="https://github.com/user-attachments/assets/55d71480-a334-43a1-8405-333009862ec8">
+
 3. Add Prebuilt Hierarchies and Measures
     - In the Power BI model, create date hierarchies (e.g., Year > Quarter > Month > Day, Fiscal, ISO Week).
     - Add DAX measures for YTD, MTD, QTD, Prior Year, Holidays, etc. (reuse from your advanced-dax-measures.txt).
