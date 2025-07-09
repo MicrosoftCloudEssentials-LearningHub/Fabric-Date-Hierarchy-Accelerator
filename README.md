@@ -65,34 +65,7 @@ Last updated: 2025-05-20
 2. Ensure you have access to your [Microsoft Fabric workspace](https://app.fabric.microsoft.com/).
 3. [Option 1](./Op1-DataflowGen2.md): A parameterized Power Query script that generates a `reusable date table`. It supports fiscal logic, holidays, and time intelligence (YTD, MTD, etc.), and stores the result in a Lakehouse for Direct Lake consumption.
 4. [Option 2](./Op2-Notebook-based.md): For those who prefer a code-first approach, this option uses Fabric notebooks to generate the date table and write it to a Lakehouse. It’s ideal for advanced logic and pipeline integration.
-5. Option 3: A semantic model template that includes preconfigured hierarchies and measures. This is useful for teams looking to standardize reporting and accelerate development.
-
-### Power BI Semantic Model Template (Option 3) 
-
-`.PBIT`
-
-1. Create the Date Table in Fabric Lakehouse/Warehouse: Leverage [Dataflow Gen2 with Power Query](./Op1-DataflowGen2.md) or use a [Fabric Notebook (PySpark or T-SQL)](./Op2-Notebook-based.md) to generate and save the date table in your Lakehouse.
-2. Create a Power BI Report Connected to the Lakehouse:
-    - Connect to your Fabric Lakehouse (use Direct Lake or DirectQuery mode).
-    - Import the date table from the Lakehouse.
-    - Load the table into your model.
-
-        <img width="700" alt="image" src="https://github.com/user-attachments/assets/7f232b39-ce2b-49bf-a62c-a1b76c777de7">
-
-        <img width="700" alt="image" src="https://github.com/user-attachments/assets/f0f9d806-f322-4418-a96c-752891c44ee8">
-
-        <img width="700" alt="image" src="https://github.com/user-attachments/assets/55d71480-a334-43a1-8405-333009862ec8">
-
-3. Add Prebuilt Hierarchies and Measures
-    - In the Power BI model, create date hierarchies (e.g., Year > Quarter > Month > Day, Fiscal, ISO Week).
-    - Add DAX measures for YTD, MTD, QTD, Prior Year, Holidays, etc. (reuse from your advanced-dax-measures.txt).
-4. Save as a Power BI Template (.PBIT)
-    - Go to File > Export > Power BI template (.pbit).
-    - This template will include the model structure, hierarchies, and measures, but not the data.
-5. Version Control and CI/CD
-    - Store the .pbit file in your GitHub or Azure DevOps repository.
-    - Use deployment pipelines in Fabric or Power BI Service to automate deployment of the template to workspaces.
-6. Report Creation: Users can create new reports by opening the .pbit template, ensuring all reports use the standardized date table, hierarchies, and measures.
+5. [Option 3](./Op3-PBITemplate.md): A semantic model template that includes preconfigured hierarchies and measures. This is useful for teams looking to standardize reporting and accelerate development.
 
 ## Best Practices
 
@@ -100,7 +73,6 @@ Last updated: 2025-05-20
 - Schedule/Automate: Use Fabric Data Pipelines to schedule the notebook execution (e.g., daily, weekly).
 - Consume in Power BI or Other Fabric Workloads: Use the generated Lakehouse table as a source in Power BI datasets, Data Warehouses, or other Fabric experiences.
 - CI/CD Integration: Use Fabric’s Git integration for code review, pull requests, and automated deployment.
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
