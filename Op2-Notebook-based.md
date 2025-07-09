@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-05-20
+Last updated: 2025-07-08
 
 ----------
 
@@ -52,6 +52,11 @@ https://github.com/user-attachments/assets/5cf3883c-3785-473d-b9e9-c7378d1587a5
 
 ## T-SQL approach 
 
+> [!IMPORTANT]
+> Use a Fabric Data Warehouse (not a Lakehouse SQL endpoint) if you want to run CREATE TABLE or CTAS statements.
+
+https://github.com/user-attachments/assets/6d0f86b6-8529-4ad0-a14e-20dfa3df1a00
+
 1. Create a new notebook in Fabric (choose T-SQL kernel) or use a T-SQL script activity in a pipeline.
 2. Paste, or [upload the notebook](./src/notebook-date-hierarchy-tsql.ipynb). 
 3. Run all cells to generate and save the date table.
@@ -60,6 +65,18 @@ https://github.com/user-attachments/assets/5cf3883c-3785-473d-b9e9-c7378d1587a5
 
 4. The table dbo.DateTable will be created in your Lakehouse or Warehouse.
 5. Connect Power BI or other Fabric workloads to this table.
+
+> [!TIP]
+> **Best practices:**
+> - All transformations and calculations are performed using **T-SQL** to ensure compatibility with Microsoft Fabric Data Warehouse and optimal performance.  
+> - The solution is designed to be **parameter-driven** for easy reuse across different projects and environments.  
+> - The output table (e.g., `DateTableFinal`) can be **shared across Power BI datasets** to maintain consistency in time intelligence across reports.  
+> - For ongoing maintenance:  
+>   - Update the **end date** in the source `DateRange` table as needed.  
+>   - Refresh the **holiday list** to reflect current and upcoming public holidays.  
+> - Avoid using temporary tables or table variables, as they are **currently not supported** in Fabric Data Warehouse. Use **permanent staging tables** or **CTEs** instead.  
+> - Consider wrapping logic in **stored procedures** or **pipelines** for automation and scheduling.
+
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
