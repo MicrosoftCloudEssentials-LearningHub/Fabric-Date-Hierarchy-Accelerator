@@ -13,19 +13,20 @@ Last updated: 2025-07-17
 > [!NOTE]
 > Ensure that you have a warehouse or lakehouse available to store the data. If you have the necessary permissions, you can create one. Below is an example of how to create a lakehouse.
 
-   https://github.com/user-attachments/assets/527c071a-2561-40b9-941e-3ca90ee8b9bd
+   <https://github.com/user-attachments/assets/527c071a-2561-40b9-941e-3ca90ee8b9bd>
 
 > [!IMPORTANT]
 > Currently, you cannot attach a Lakehouse to a Fabric notebook via code, it must be done manually through the Fabric UI. Microsoft Fabric requires a Lakehouse
 > to be explicitly attached to the notebook session so that Spark knows where to read/write tables. This attachment is handled through the notebook interface,
 > not through PySpark code or a Spark config. <br/>
+>
 > - Open your notebook in Fabric. <br/>
 > - In the left-panel, click `Add data item`, and choose from the dropdown. <br/>
 > - Select the Lakehouse you want to use (e.g., the one with your workspace ID). 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/84172e09-3f10-44f9-a373-90ce2fa43f1d">
 
-https://github.com/user-attachments/assets/5cf3883c-3785-473d-b9e9-c7378d1587a5
+<https://github.com/user-attachments/assets/5cf3883c-3785-473d-b9e9-c7378d1587a5>
 
 ## PySpark approach 
 
@@ -37,11 +38,11 @@ https://github.com/user-attachments/assets/5cf3883c-3785-473d-b9e9-c7378d1587a5
 
 2. Paste the content of the cells as shown in this notebook, or [upload the notebook](./src/notebook-date-hierarchy-pyspark.ipynb)
 
-    https://github.com/user-attachments/assets/09336541-224d-49da-b050-2beba2f225a9
+    <https://github.com/user-attachments/assets/09336541-224d-49da-b050-2beba2f225a9>
 
 3. Run all cells to generate and save the date table.
 
-    https://github.com/user-attachments/assets/f9c9fee2-d9fc-492c-97f2-18f46a8b811e
+    <https://github.com/user-attachments/assets/f9c9fee2-d9fc-492c-97f2-18f46a8b811e>
 
     | Before | After | 
     | ---- | ---- | 
@@ -55,7 +56,7 @@ https://github.com/user-attachments/assets/5cf3883c-3785-473d-b9e9-c7378d1587a5
 > [!IMPORTANT]
 > Use a Fabric Data Warehouse (not a Lakehouse SQL endpoint) if you want to run CREATE TABLE or CTAS statements.
 
-https://github.com/user-attachments/assets/6d0f86b6-8529-4ad0-a14e-20dfa3df1a00
+<https://github.com/user-attachments/assets/6d0f86b6-8529-4ad0-a14e-20dfa3df1a00>
 
 1. Create a new notebook in Fabric (choose T-SQL kernel) or use a T-SQL script activity in a pipeline.
 2. Paste, or [upload the notebook](./src/notebook-date-hierarchy-tsql.ipynb). 
@@ -68,6 +69,7 @@ https://github.com/user-attachments/assets/6d0f86b6-8529-4ad0-a14e-20dfa3df1a00
 
 > [!TIP]
 > **Best practices:**
+>
 > - All transformations and calculations are performed using **T-SQL** to ensure compatibility with Microsoft Fabric Data Warehouse and optimal performance.  
 > - The solution is designed to be **parameter-driven** for easy reuse across different projects and environments.  
 > - The output table (e.g., `DateTableFinal`) can be **shared across Power BI datasets** to maintain consistency in time intelligence across reports.  

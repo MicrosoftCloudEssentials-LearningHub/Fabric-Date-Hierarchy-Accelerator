@@ -10,22 +10,22 @@ Last updated: 2025-07-17
 
 ----------
 
->  Dataflow Gen2 to generate a parameterized, reusable date table, storing the output in a Lakehouse, and consuming it via Direct Lake in Power BI.
+> Dataflow Gen2 to generate a parameterized, reusable date table, storing the output in a Lakehouse, and consuming it via Direct Lake in Power BI.
 
 > [!NOTE]
 > The script is parameterized, meaning you can customize. You’ll usually see these as variables at the top of the script. Modify them as needed for your organization. <br/>
+>
 > - Start Date (e.g., 2020-01-01) <br/>
 > - End Date (e.g., 2030-12-31) <br/>
 > - Fiscal Year Start Month (e.g., 7 for July) <br/>
 > - Holiday Table (optional: pass a list of dates to mark holidays)
 
-https://github.com/user-attachments/assets/6100e991-eefa-4fcc-b397-42364a70d83a
-
+<https://github.com/user-attachments/assets/6100e991-eefa-4fcc-b397-42364a70d83a>
 
 > [!IMPORTANT]
 > Ensure that you have a warehouse or lakehouse available to store the data. If you have the necessary permissions, you can create one. Below is an example of how to create a lakehouse.
 
-  https://github.com/user-attachments/assets/527c071a-2561-40b9-941e-3ca90ee8b9bd
+  <https://github.com/user-attachments/assets/527c071a-2561-40b9-941e-3ca90ee8b9bd>
   
 1. Go to your workspace, or create a new workspace if needed.
 
@@ -51,7 +51,7 @@ https://github.com/user-attachments/assets/6100e991-eefa-4fcc-b397-42364a70d83a
 
 6. Rename the query as desired, e.g something like DateTableQuery (use `right-click`).
 
-    https://github.com/user-attachments/assets/111512e1-0c6c-493b-a9ad-205788a72146
+    <https://github.com/user-attachments/assets/111512e1-0c6c-493b-a9ad-205788a72146>
 
 7. Load it into, this makes the date table available for modeling and DAX calculations.
     - A Lakehouse (if using Data Engineering),

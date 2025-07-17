@@ -53,11 +53,12 @@ Last updated: 2025-07-17
      ```
 
   3. After installation, restart your terminal and run:
+
      ```powershell
      choco install make
      ```
 
-        https://github.com/user-attachments/assets/52536caf-36c2-4b1e-a42b-e64e3d6b403a
+        <https://github.com/user-attachments/assets/52536caf-36c2-4b1e-a42b-e64e3d6b403a>
 
 ## Automation Walkthrough
 
