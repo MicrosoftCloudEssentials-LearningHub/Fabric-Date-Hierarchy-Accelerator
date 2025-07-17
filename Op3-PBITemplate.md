@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-05-20
+Last updated: 2025-07-17
 
 ----------
 
@@ -15,7 +15,7 @@ Last updated: 2025-05-20
 > [!IMPORTANT]
 > Before connecting Power BI to your Fabric Data Warehouse, ensure that you `create the semantic model based on the tables you intend to use`. This enables a smooth and reliable connection between Power BI and your warehouse data.
 
-https://github.com/user-attachments/assets/b85baa6d-6e15-459a-9b99-31cbf0d6c218
+<https://github.com/user-attachments/assets/b85baa6d-6e15-459a-9b99-31cbf0d6c218>
 
 1. Create the Date Table in Fabric Lakehouse/Warehouse: Leverage [Dataflow Gen2 with Power Query](./Op1-DataflowGen2.md) or use a [Fabric Notebook (PySpark or T-SQL)](./Op2-Notebook-based.md) to generate and save the date table in your Lakehouse.
 2. Create a Power BI Report Connected to the Lakehouse:
@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/b85baa6d-6e15-459a-9b99-31cbf0d6c218
 
         <img width="700" alt="image" src="https://github.com/user-attachments/assets/55d71480-a334-43a1-8405-333009862ec8">
 
-        https://github.com/user-attachments/assets/918bc6dc-6a63-4ad3-9bf8-0b8994b41a81
+        <https://github.com/user-attachments/assets/918bc6dc-6a63-4ad3-9bf8-0b8994b41a81>
 
 3. Add Prebuilt Hierarchies and Measures
     - In the Power BI model, create date hierarchies (e.g., Year > Quarter > Month > Day, Fiscal, ISO Week).
@@ -38,14 +38,16 @@ https://github.com/user-attachments/assets/b85baa6d-6e15-459a-9b99-31cbf0d6c218
     - Go to File > Export > Power BI template (.pbit).
     - This template will include the model structure, hierarchies, and measures, but not the data.
 
-        https://github.com/user-attachments/assets/452e86e8-6ebb-4c07-aad8-c9597d1c0a65
+        <https://github.com/user-attachments/assets/452e86e8-6ebb-4c07-aad8-c9597d1c0a65>
 
 5. Version Control and CI/CD
     - Store the .pbit file in your GitHub or Azure DevOps repository.
     - Use deployment pipelines in Fabric or Power BI Service to automate deployment of the template to workspaces.
 6. Report Creation: Users can create new reports by opening the .pbit template, ensuring all reports use the standardized date table, hierarchies, and measures.
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-386-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->
